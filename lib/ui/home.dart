@@ -5,14 +5,23 @@ myapp() {
     width: 500,
     height: 500,
     alignment: Alignment.bottomCenter,
-    child: Text(
-      'This is my Image',
-      style: TextStyle(
-        color: Colors.blue[200],
-        fontWeight: FontWeight.bold,
-        fontSize: 36,
+    child: Column(children: <Widget>[
+      Text(
+        'This is my Image',
+        style: TextStyle(
+          color: Colors.blue[200],
+          fontWeight: FontWeight.bold,
+          fontSize: 36,
+        ),
       ),
-    ),
+      Text(
+        'Generously designed by Vibhav Sharma',
+        style: TextStyle(
+          fontSize: 20,
+          color: Colors.red[300],
+        ),
+      ),
+    ]),
     decoration: BoxDecoration(
         image: DecorationImage(
             image: NetworkImage(
